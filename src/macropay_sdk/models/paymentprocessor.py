@@ -6,3 +6,10 @@ from enum import Enum
 
 class PaymentProcessor(str, Enum):
     STRIPE = "stripe"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    MANUAL = "manual"
+    BASIS_THEORY = "basis_theory"
+    CHECKOUT_COM = "checkout_com"
+    ADYEN = "adyen"

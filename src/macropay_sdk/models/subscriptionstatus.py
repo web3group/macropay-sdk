@@ -12,3 +12,7 @@ class SubscriptionStatus(str, Enum):
     PAST_DUE = "past_due"
     CANCELED = "canceled"
     UNPAID = "unpaid"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    PAUSED = "paused"

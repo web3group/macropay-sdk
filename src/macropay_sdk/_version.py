@@ -3,10 +3,10 @@
 import importlib.metadata
 
 __title__: str = "macropay-sdk"
-__version__: str = "3.0.5"
+__version__: str = "3.0.6"
 __openapi_doc_version__: str = "0.1.0"
 __gen_version__: str = "2.737.0"
-__user_agent__: str = "speakeasy-sdk/python 3.0.5 2.737.0 0.1.0 macropay-sdk"
+__user_agent__: str = "speakeasy-sdk/python 3.0.6 2.737.0 0.1.0 macropay-sdk"
 
 try:
     if __package__ is not None:

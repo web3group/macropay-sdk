@@ -68,3 +68,12 @@ class Scope(str, Enum):
     NOTIFICATION_RECIPIENTS_WRITE = "notification_recipients:write"
     ORGANIZATION_ACCESS_TOKENS_READ = "organization_access_tokens:read"
     ORGANIZATION_ACCESS_TOKENS_WRITE = "organization_access_tokens:write"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    X402_READ = "x402:read"
+    X402_WRITE = "x402:write"
+    AI_MODEL_CONFIGS_READ = "ai_model_configs:read"
+    AI_MODEL_CONFIGS_WRITE = "ai_model_configs:write"
+    PROXY_API_KEYS_READ = "proxy_api_keys:read"
+    PROXY_API_KEYS_WRITE = "proxy_api_keys:write"

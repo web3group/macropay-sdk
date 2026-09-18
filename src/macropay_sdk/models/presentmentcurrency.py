@@ -15,3 +15,22 @@ class PresentmentCurrency(str, Enum):
     JPY = "jpy"
     SEK = "sek"
     USD = "usd"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    AED = "aed"
+    CLP = "clp"
+    COP = "cop"
+    DKK = "dkk"
+    HKD = "hkd"
+    ILS = "ils"
+    KRW = "krw"
+    MXN = "mxn"
+    NOK = "nok"
+    NZD = "nzd"
+    PLN = "pln"
+    SAR = "sar"
+    SGD = "sgd"
+    THB = "thb"
+    TRY = "try"
+    ZAR = "zar"

@@ -8,3 +8,8 @@ class PaymentStatus(str, Enum):
     PENDING = "pending"
     SUCCEEDED = "succeeded"
     FAILED = "failed"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    REFUNDED = "refunded"
+    DISPUTED = "disputed"

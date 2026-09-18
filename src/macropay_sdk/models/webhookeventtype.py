@@ -40,3 +40,14 @@ class WebhookEventType(str, Enum):
     BENEFIT_GRANT_UPDATED = "benefit_grant.updated"
     BENEFIT_GRANT_REVOKED = "benefit_grant.revoked"
     ORGANIZATION_UPDATED = "organization.updated"
+    # Added by hand: the generated enum predates these values and a
+    # str Enum is closed, so a missing value makes the SDK reject a
+    # valid API response outright. Kept in sync with the OpenAPI spec.
+    TEST = "test"
+    USAGE_THRESHOLD_REACHED = "usage.threshold_reached"
+    SUBSCRIPTION_UPGRADE_RECOMMENDED = "subscription.upgrade_recommended"
+    AFFILIATE_APPLICATION_CREATED = "affiliate.application.created"
+    AFFILIATE_APPROVED = "affiliate.approved"
+    AFFILIATE_REJECTED = "affiliate.rejected"
+    AFFILIATE_CONVERSION_CREATED = "affiliate.conversion.created"
+    AFFILIATE_COMMISSION_PAID = "affiliate.commission.paid"
